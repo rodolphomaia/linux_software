@@ -1,0 +1,23 @@
+#!/bin/bash
+sudo apt-get update &&
+sudo apt-get upgrade &&
+sudo apt-get install btop &&
+
+#WORK
+flatpak install flathub com.vscodium.codium &&
+flatpak install flathub org.filezillaproject.Filezilla &&
+flatpak install flathub org.remmina.Remmina &&
+flatpak install flathub com.bitwarden.desktop &&
+flatpak install flathub io.ente.auth &&
+
+#UTILITIES
+flatpak install flathub org.localsend.localsend_app &&
+
+#OTHERS
+flatpak install flathub com.discordapp.Discord &&
+flatpak install flathub com.spotify.Client &&
+flatpak install flathub org.telegram.desktop &&
+flatpak install flathub com.brave.Browser &&
+flatpak install flathub com.google.Chrome &&
+flatpak install flathub org.gimp.GIMP &&
+flatpak install flathub org.atheme.audacious
