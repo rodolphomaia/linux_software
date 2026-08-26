@@ -1,7 +1,7 @@
 #!/bin/bash
-sudo dnf check-update &&
-sudo dnf upgrade -y &&
-sudo dnf install btop &&
+dnf check-update &&
+dnf upgrade -y &&
+dnf install btop &&
 
 #WORK
 flatpak install flathub com.vscodium.codium &&
