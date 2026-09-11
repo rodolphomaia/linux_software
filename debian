@@ -21,3 +21,7 @@ flatpak install flathub com.brave.Browser &&
 flatpak install flathub com.google.Chrome &&
 flatpak install flathub org.gimp.GIMP &&
 flatpak install flathub org.atheme.audacious
+
+#BASH STARSHIP
+curl -sS https://starship.rs/install.sh | sh
+eval "$(starship init bash)"
