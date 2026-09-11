@@ -1,2 +1,3 @@
 #curl -fsSL https://raw.githubusercontent.com/rodolphomaia/linux_software/refs/heads/main/debian | sudo bash
 #curl -fsSL https://raw.githubusercontent.com/rodolphomaia/linux_software/refs/heads/main/fedora | sudo bash
+#curl -fsSL https://raw.githubusercontent.com/rodolphomaia/linux_software/refs/heads/main/arch | sudo bash
