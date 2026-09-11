@@ -1,4 +1,8 @@
 #!/bin/bash
+
+# FLATHUB
+sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo &&
+
 dnf check-update &&
 dnf upgrade -y &&
 dnf install btop &&
