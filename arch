@@ -10,6 +10,7 @@ sudo pacman -S --needed btop flatpak curl --noconfirm &&
 
 # WORK
 flatpak install -y flathub com.vscodium.codium &&
+flatpak install flathub com.sublimehq.SublimeText &&
 flatpak install -y flathub org.filezillaproject.Filezilla &&
 flatpak install -y flathub org.remmina.Remmina &&
 flatpak install -y flathub com.bitwarden.desktop &&
@@ -17,6 +18,7 @@ flatpak install -y flathub io.ente.auth &&
 
 # UTILITIES
 flatpak install -y flathub org.localsend.localsend_app &&
+flatpak install flathub io.gitlab.news_flash.NewsFlash &&
 
 # OTHERS
 flatpak install -y flathub com.discordapp.Discord &&
