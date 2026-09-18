@@ -1,33 +1,37 @@
 #!/bin/bash
 
+set -e
+
 # FLATHUB
-sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo &&
+sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
-dnf check-update &&
-dnf upgrade -y &&
-dnf install btop &&
+# SYSTEM UPDATE
+sudo dnf upgrade -y
+sudo dnf install -y btop
 
-#WORK
-flatpak install flathub com.vscodium.codium &&
-flatpak install flathub com.sublimehq.SublimeText &&
-flatpak install flathub org.filezillaproject.Filezilla &&
-flatpak install flathub org.remmina.Remmina &&
-flatpak install flathub com.bitwarden.desktop &&
-flatpak install flathub io.ente.auth &&
+# WORK
+flatpak install -y flathub com.vscodium.codium
+flatpak install -y flathub com.sublimehq.SublimeText
+flatpak install -y flathub org.filezillaproject.Filezilla
+flatpak install -y flathub org.remmina.Remmina
+flatpak install -y flathub com.bitwarden.desktop
+flatpak install -y flathub io.ente.auth
 
-#UTILITIES
-flatpak install flathub org.localsend.localsend_app &&
-flatpak install flathub io.gitlab.news_flash.NewsFlash &&
+# UTILITIES
+flatpak install -y flathub org.localsend.localsend_app
+flatpak install -y flathub io.gitlab.news_flash.NewsFlash
 
-#OTHERS
-#flatpak install flathub com.discordapp.Discord &&
-flatpak install flathub com.spotify.Client &&
-flatpak install flathub org.telegram.desktop &&
-flatpak install flathub com.brave.Browser &&
-flatpak install flathub com.google.Chrome &&
-flatpak install flathub org.gimp.GIMP &&
-flatpak install flathub org.atheme.audacious
+# OTHERS
+# flatpak install -y flathub com.discordapp.Discord
+flatpak install -y flathub com.spotify.Client
+flatpak install -y flathub org.telegram.desktop
+flatpak install -y flathub com.brave.Browser
+flatpak install -y flathub com.google.Chrome
+flatpak install -y flathub org.gimp.GIMP
+flatpak install -y flathub org.atheme.audacious
 
-#BASH STARSHIP
-curl -sS https://starship.rs/install.sh | sh
+# BASH STARSHIP
+curl -sS https://starship.rs/install.sh | sh -s -- -y
+
+# Initialize Starship for the current shell
 eval "$(starship init bash)"
