@@ -9,6 +9,7 @@ dnf install btop &&
 
 #WORK
 flatpak install flathub com.vscodium.codium &&
+flatpak install flathub com.sublimehq.SublimeText &&
 flatpak install flathub org.filezillaproject.Filezilla &&
 flatpak install flathub org.remmina.Remmina &&
 flatpak install flathub com.bitwarden.desktop &&
@@ -16,9 +17,10 @@ flatpak install flathub io.ente.auth &&
 
 #UTILITIES
 flatpak install flathub org.localsend.localsend_app &&
+flatpak install flathub io.gitlab.news_flash.NewsFlash &&
 
 #OTHERS
-flatpak install flathub com.discordapp.Discord &&
+#flatpak install flathub com.discordapp.Discord &&
 flatpak install flathub com.spotify.Client &&
 flatpak install flathub org.telegram.desktop &&
 flatpak install flathub com.brave.Browser &&
